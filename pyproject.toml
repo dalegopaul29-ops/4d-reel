@@ -1,0 +1,17 @@
+[project]
+name = "4d-reel"
+version = "0.2.0"
+description = "4D Reel - local-first AI short-drama studio."
+requires-python = ">=3.10"
+dependencies = ["pydantic>=2.6", "google-genai>=1.2", "edge-tts>=7.2.0", "openai-whisper>=20231117"]
+
+[project.optional-dependencies]
+captions = ["openai-whisper>=20231117"]   # pip install -e ".[captions]" - needs Python <=3.13
+video = ["replicate>=1.0"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+reel = "fourd_reel.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

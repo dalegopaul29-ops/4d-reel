@@ -1,0 +1,13 @@
+pydantic>=2.6
+google-genai>=1.2
+edge-tts>=7.2.0
+openai-whisper>=20231117
+
+[captions]
+openai-whisper>=20231117
+
+[dev]
+pytest>=8.0
+
+[video]
+replicate>=1.0

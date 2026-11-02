@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: 4d-reel
+Version: 0.2.0
+Summary: 4D Reel - local-first AI short-drama studio.
+Requires-Python: >=3.10
+Requires-Dist: pydantic>=2.6
+Requires-Dist: google-genai>=1.2
+Requires-Dist: edge-tts>=7.2.0
+Requires-Dist: openai-whisper>=20231117
+Provides-Extra: captions
+Requires-Dist: openai-whisper>=20231117; extra == "captions"
+Provides-Extra: video
+Requires-Dist: replicate>=1.0; extra == "video"
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
